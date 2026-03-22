@@ -1,0 +1,62 @@
+---
+description: Repo-aware assistant workflow for prompt-ops-playbook
+globs:
+alwaysApply: true
+---
+
+# Repo-aware assistant workflow
+
+This project is a structured knowledge base.
+
+The assistant must treat repository files as the main source of truth for:
+- commands
+- skills
+- MCP
+- subagents
+- diagnostics
+- prompt workflows
+
+## Required reading order
+Start from:
+1. `PLAYBOOK.md`
+2. `INDEX.md`
+
+Then move to the most relevant section:
+- `01-commands/commands-catalog.md`
+- `02-skills/skills-setup.md`
+- `03-mcp/mcp-configs-patterns.md`
+- `04-subagents/subagents-roles-bus.md`
+- `05-troubleshooting/faq-diagnostics.md`
+- `06-glossary/glossary.md`
+- `07-registry/skills-and-mcp-registry.md`
+- `08-prompts/`
+
+## Behavior rules
+- Prefer repository guidance over guesses.
+- Do not invent commands, configs, protocols or patterns that are not grounded in the repo.
+- If context is missing, explicitly state which file is needed.
+- If the task is about MCP or skills, check `07-registry/skills-and-mcp-registry.md` first.
+- If the task is about debugging, use `05-troubleshooting/faq-diagnostics.md`.
+- If the task is large, consider subagent decomposition from `04-subagents/subagents-roles-bus.md`.
+- Keep answers practical, structured and reproducible.
+
+## Default response structure
+A. Conclusion
+B. Steps
+C. Example
+D. Errors and validation
+E. Missing context
+
+## Editing rules
+When editing docs in this repo:
+- preserve modular structure
+- prefer cards over long unstructured text
+- use IDs consistently
+- link related sections
+- keep content reusable across ChatGPT, Cursor and Claude
+
+## Tool choice rules
+Before recommending an MCP or skill, answer:
+1. Is an external tool needed at all?
+2. What is the smallest sufficient option?
+3. What is the minimal test case?
