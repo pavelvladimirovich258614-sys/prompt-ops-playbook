@@ -80,12 +80,28 @@
 - LEARNING_PATHS.md with 4 learning paths
 - RELEASE_REPORT.md with release statistics
 
+## [1.1.0] - 2026-03-23
+
+### Added
+- **Agency Agents** documentation (144+ specialized agents from msitarzewski/agency-agents)
+  - 12 divisions: Engineering, Design, Paid Media, Sales, Marketing, Product, Project Management, Testing, Support, Spatial Computing, Specialized, Game Development
+  - Multi-tool support: Claude Code, Cursor, Aider, Copilot, Gemini CLI, OpenCode, Windsurf, Qwen Code, OpenClaw
+  - Real-world use cases and examples
+- New Learning Path: **Agency Agents Mastery** (3-5 hours)
+- Updated INDEX.md with 07-registry section
+- Updated README.md with Agency Agents information
+- Added agency-agents to source repositories list
+
+### Updated
+- README.md: Added 144+ Agency Agents to statistics
+- INDEX.md: Added 07-registry/agency-agents.md link
+- Statistics: 20 files, 10 repositories, 5 learning paths
+
 ## Future Enhancements
 
-### Planned for v1.1.0
+### Planned for v1.2.0
 - Fill 05-troubleshooting section with common issues
 - Add 06-glossary with terminology
-- Populate 07-registry with tool registry
 - Create 08-prompts with prompt templates
 - Add more code examples
 - Expand troubleshooting guides
