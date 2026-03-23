@@ -117,6 +117,33 @@ Users should start with Master Prompt to get the best experience:
 - Agency Agents are used from the knowledge base
 - AI acts as an experienced Senior Developer
 
+## [1.1.2] - 2026-03-23
+
+### Added
+- **Claude Code Commands Cheatsheet** (01-commands/claude-code-commands-cheatsheet.md)
+  - 50+ команд Claude Code с описанием
+  - Project Setup & Memory (/init, /memory, /add-dir)
+  - Context & Session Lifecycle (/compact, /clear, /context)
+  - Code Review & Quality (/diff, /simplify, /review)
+  - CLI Flags (claude, --print, --continue, --effort)
+  - System & Diagnostics (/config, /doctor, /permissions)
+  - Model Controls (/model, /effort, /fast, /plan)
+  - Monitoring (/cost, /export, /usage-report)
+  - Inline Prefixes (@path, !command, #text)
+  - Multi-Agent & Automation (/agents, /batch, /loop)
+  - Keyboard Shortcuts (Shift+Tab, Ctrl+R, etc.)
+- **Color Expert Skill** (02-skills/skill-color-expert.md)
+  - Claude Code-скилл для работы с цветом
+  - 113 справочных файлов
+  - 286 000 слов о науке о цвете
+  - От работ Гельмгольца (1856) до OKLCH
+  - Установка: git clone https://github.com/meodai/skill.color-expert
+
+### Updated
+- **README.md**: Updated statistics (22 files), added Color Expert and commands cheatsheet
+- **INDEX.md**: Added links to new files in 01-commands and 02-skills sections
+- **Source repositories**: Added meodai/skill.color-expert
+
 ## Future Enhancements
 
 ### Planned for v1.2.0
@@ -126,7 +153,7 @@ Users should start with Master Prompt to get the best experience:
 - Add more code examples
 - Expand troubleshooting guides
 
-### Planned for v1.2.0
+### Planned for v1.3.0
 - Integration with more MCP servers
 - Additional subagent patterns
 - Video tutorials
