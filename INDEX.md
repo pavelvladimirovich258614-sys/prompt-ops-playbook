@@ -63,6 +63,9 @@
 2. [Subagents](04-subagents/)
 3. [CodeX Catalog](09-codex/01-subagents-catalog.md)
 
+### 07-registry — Реестр инструментов
+- [Agency Agents](07-registry/agency-agents.md) — 144+ специализированных AI-агента от msitarzewski
+
 ## Реестр инструментов
 
 | Инструмент | Назначение | Раздел |
@@ -74,6 +77,7 @@
 | Page Agent | In-page GUI agent | 04-subagents |
 | Superpowers | Skills framework | 02-skills |
 | Supersearch | BM25 поиск | 06-glossary |
+| Agency Agents | 144+ AI агентов с личностями | 07-registry |
 
 ## Теги
 
