@@ -97,6 +97,26 @@
 - INDEX.md: Added 07-registry/agency-agents.md link
 - Statistics: 20 files, 10 repositories, 5 learning paths
 
+## [1.1.1] - 2026-03-23
+
+### Changed
+- **README.md**: Master Prompt is now the FIRST and RECOMMENDED way to start
+  - Added prominent warning block at the top
+  - Moved Master Prompt to "Вариант 1" (was "Вариант 4")
+  - Added clear instructions how to use
+- **INDEX.md**: Enhanced "СТАРТУЙ ЗДЕСЬ" section
+  - Added warning that Master Prompt should be used FIRST
+  - Added step-by-step instructions
+  - Added benefits list
+- **MASTER_PROMPT.md**: Already exists and ready to use
+
+### Why this change?
+Users should start with Master Prompt to get the best experience:
+- AI automatically suggests commands
+- MCP servers are connected automatically
+- Agency Agents are used from the knowledge base
+- AI acts as an experienced Senior Developer
+
 ## Future Enhancements
 
 ### Planned for v1.2.0
