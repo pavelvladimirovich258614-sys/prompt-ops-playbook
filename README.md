@@ -10,7 +10,8 @@
 ## Что это?
 
 Этот репозиторий — **энциклопедия** для работы с AI-агентами:
-- **136+ CodeX субагентов** — готовые специалисты для любых задач
+- **144+ Agency Agents** — специализированные агенты с личностями (Claude, Cursor, Aider)
+- **136+ CodeX субагентов** — готовые специалисты для CodeX
 - **Claude Code команды** — slash-команды и skills
 - **MCP интеграции** — подключение внешних инструментов
 - **Workflow шаблоны** — проверенные паттерны работы
@@ -57,7 +58,7 @@
 ├── 📁 04-subagents/      ← Субагенты, оркестрация
 ├── 📁 05-troubleshooting/← Решение проблем (TODO)
 ├── 📁 06-glossary/       ← Глоссарий терминов (TODO)
-├── 📁 07-registry/       ← Реестр инструментов (TODO)
+├── 📁 07-registry/       ← Реестр инструментов (Agency Agents — 144+ агентов!)
 ├── 📁 08-prompts/        ← Промпт-шаблоны (TODO)
 └── 📁 09-codex/          ← CodeX субагенты (136+ агентов!)
 ```
@@ -83,14 +84,21 @@
 Найди мне субагента для backend разработки на Python.
 ```
 
-### Пример 3: Нужен workflow для команды
+### Пример 3: Нужен Agency Agent (Claude/Cursor/Aider)
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/07-registry/agency-agents.md
+
+Установи Agency Agents и активируй Frontend Developer для создания React компонента.
+```
+
+### Пример 4: Нужен workflow для команды
 ```
 Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/02-skills/concept-workflow.md
 
 Внедри workflow "Subagent-driven Development" для моей команды.
 ```
 
-### Пример 4: Нужен agent loop
+### Пример 5: Нужен agent loop
 ```
 Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/04-subagents/agent-loop.md
 
@@ -98,6 +106,17 @@
 - read_file
 - write_file
 - execute (bash)
+```
+
+### Пример 6: Нужна команда агентов для проекта
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/07-registry/agency-agents.md
+
+Собери команду агентов для разработки MVP:
+- Frontend Developer (React)
+- Backend Architect (Python/FastAPI)
+- DevOps Automator (Docker/K8s)
+- Code Reviewer (QA)
 ```
 
 ---
@@ -157,7 +176,22 @@
 Создай workflow для code review с 3 субагентами.
 ```
 
-### Путь 4: Full Stack ⏱️ 8-12 часов
+### Путь 4: Agency Agents Mastery ⏱️ 3-5 часов
+**Для:** Тех, кто хочет использовать готовых агентов с личностями
+
+**Что изучить:**
+1. [Agency Agents Overview](07-registry/agency-agents.md)
+2. Установка для вашего редактора (Claude/Cursor/Aider)
+3. Выбор агентов под задачи
+
+**Промпт для нейросети:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/07-registry/agency-agents.md
+
+Установи Agency Agents для [Claude Code/Cursor/Aider] и покажи как использовать Frontend Developer.
+```
+
+### Путь 5: Full Stack ⏱️ 8-12 часов
 **Для:** Тимлидов и архитекторов
 
 **Что изучить:** Все разделы последовательно
@@ -171,7 +205,7 @@ https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook
 - Настройка Claude Code
 - Настройка MCP
 - Workflow с субагентами
-- CodeX интеграция
+- Agency Agents интеграция
 ```
 
 ---
@@ -254,6 +288,25 @@ https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook
 Создай агента на Python с инструментами read_file, write_file, execute.
 ```
 
+### 07-registry — Реестр инструментов
+**Когда использовать:** Выбираете инструменты для проекта
+
+**Что внутри:**
+- Agency Agents — **144+ специализированных AI-агента** с личностями
+  - 12 дивизий (Engineering, Design, Sales, Marketing, и др.)
+  - Поддержка Claude Code, Cursor, Aider, Copilot, Gemini CLI
+  - Готовые workflow и метрики успеха
+
+**Пример промпта:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/07-registry/agency-agents.md
+
+Собери команду агентов для разработки MVP:
+- Frontend Developer (React)
+- Backend Architect (Python)
+- DevOps Automator
+```
+
 ### 09-codex — CodeX субагенты
 **Когда использовать:** Работа с Codex
 
@@ -285,15 +338,17 @@ https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook
 - [page-agent](https://github.com/alibaba/page-agent)
 - [context-hub](https://github.com/andrewyng/context-hub)
 - [supersearch](https://github.com/anish-palakurthi/supersearch)
+- [agency-agents](https://github.com/msitarzewski/agency-agents)
 
 ---
 
 ## Статистика
 
-- **19 файлов** документации
+- **20 файлов** документации
+- **144+ Agency Agents** с личностями
 - **136+ CodeX субагентов** в каталоге
-- **9 репозиториев** разобрано
-- **4 learning paths** для разных уровней
+- **10 репозиториев** разобрано
+- **5 learning paths** для разных уровней
 
 ---
 
