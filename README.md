@@ -1,53 +1,278 @@
 # Prompt Ops Playbook
 
-> Модульная база знаний для агентов: команды, навыки, MCP, субагенты и промпты.
+> Модульная база знаний для AI-агентов: команды, навыки, MCP, субагенты и промпты.
 
-## Быстрый старт
+[![GitHub](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook)
+[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
 
-```bash
-# Клонировать репозиторий
-git clone https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook.git
+---
 
-# Найти нужную информацию
-cd prompt-ops-playbook
- cat INDEX.md
+## Что это?
+
+Этот репозиторий — **энциклопедия** для работы с AI-агентами:
+- **136+ CodeX субагентов** — готовые специалисты для любых задач
+- **Claude Code команды** — slash-команды и skills
+- **MCP интеграции** — подключение внешних инструментов
+- **Workflow шаблоны** — проверенные паттерны работы
+- **Subagent паттерны** — делегирование и оркестрация
+
+---
+
+## Быстрый старт (30 секунд)
+
+### Вариант 1: Найти нужное
+1. Откройте **[INDEX.md](INDEX.md)** — там вся навигация
+2. Найдите раздел по задаче
+3. Перейдите по ссылке
+
+### Вариант 2: Спросить нейросеть
 ```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/INDEX.md
+
+Мне нужно [ВАША ЗАДАЧА]. Какой раздел мне смотреть?
+```
+
+### Вариант 3: Пошаговое руководство
+👉 **[USAGE.md](USAGE.md)** — подробные инструкции с примерами промптов
+
+---
 
 ## Структура репозитория
 
-| Раздел | Содержание | Когда использовать |
-|--------|------------|-------------------|
-| [01-commands](01-commands/) | CLI команды, slash-команды | Нужна быстрая справка по командам |
-| [02-skills](02-skills/) | Навыки, workflow, паттерны | Создаёте новый skill или workflow |
-| [03-mcp](03-mcp/) | Model Context Protocol | Интеграция с MCP серверами |
-| [04-subagents](04-subagents/) | Субагенты, оркестрация | Делегирование задач агентам |
-| [05-troubleshooting](05-troubleshooting/) | Решение проблем | Что-то пошло не так |
-| [06-glossary](06-glossary/) | Термины и определения | Нужно уточнить термин |
-| [07-registry](07-registry/) | Реестр инструментов | Выбираете инструмент |
-| [08-prompts](08-prompts/) | Промпт-шаблоны | Пишете промпт |
-| [09-codex](09-codex/) | CodeX субагенты | Работа с Codex |
-
-## Learning Paths
-
-### Путь 1: Claude Code Basics (2-4 часа)
 ```
-01-commands → 02-skills → 05-troubleshooting
-```
-
-### Путь 2: MCP Integration (3-5 часов)
-```
-03-mcp → 04-subagents
-```
-
-### Путь 3: Subagent Development (4-6 часов)
-```
-02-skills → 04-subagents → 09-codex
+📁 prompt-ops-playbook/
+│
+├── 📄 README.md          ← Вы здесь
+├── 📄 INDEX.md           ← Навигация по всем разделам
+├── 📄 USAGE.md           ← Подробное руководство с примерами
+├── 📄 PLAYBOOK.md        ← Prompt Ops методология
+├── 📄 AGENTS.md          ← Архитектура агентов
+├── 📄 CHANGELOG.md       ← История изменений
+├── 📄 CONTRIBUTING.md    ← Как внести вклад
+└── 📄 LICENSE            ← MIT License
+│
+├── 📁 01-commands/       ← CLI команды, slash-команды
+├── 📁 02-skills/         ← Навыки, workflow, паттерны
+├── 📁 03-mcp/            ← Model Context Protocol
+├── 📁 04-subagents/      ← Субагенты, оркестрация
+├── 📁 05-troubleshooting/← Решение проблем (TODO)
+├── 📁 06-glossary/       ← Глоссарий терминов (TODO)
+├── 📁 07-registry/       ← Реестр инструментов (TODO)
+├── 📁 08-prompts/        ← Промпт-шаблоны (TODO)
+└── 📁 09-codex/          ← CodeX субагенты (136+ агентов!)
 ```
 
-### Путь 4: Full Stack (8-12 часов)
+---
+
+## Примеры использования
+
+### Пример 1: Нужен skill для Claude Code
 ```
-01-commands → 02-skills → 03-mcp → 04-subagents
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/02-skills/concept-skill.md
+
+Создай skill для code review Python:
+1. Проверяй типы
+2. Ищи баги
+3. Проверяй стиль PEP8
 ```
+
+### Пример 2: Нужен CodeX субагент
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/09-codex/01-subagents-catalog.md
+
+Найди мне субагента для backend разработки на Python.
+```
+
+### Пример 3: Нужен workflow для команды
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/02-skills/concept-workflow.md
+
+Внедри workflow "Subagent-driven Development" для моей команды.
+```
+
+### Пример 4: Нужен agent loop
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/04-subagents/agent-loop.md
+
+Создай минимальный агент на Python с инструментами:
+- read_file
+- write_file
+- execute (bash)
+```
+
+---
+
+## Learning Paths (Пути обучения)
+
+### Путь 1: Claude Code Basics ⏱️ 2-4 часа
+**Для:** Новичков в Claude Code
+
+**Что изучить:**
+1. [Slash-команды](01-commands/slash-commands.md)
+2. [Skills](01-commands/skills.md)
+3. [Concept: Skill](02-skills/concept-skill.md)
+
+**Промпт для нейросети:**
+```
+Прочитай последовательно:
+1. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/01-commands/slash-commands.md
+2. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/01-commands/skills.md
+3. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/02-skills/concept-skill.md
+
+Создай summary и покажи как применить.
+```
+
+### Путь 2: MCP Integration ⏱️ 3-5 часов
+**Для:** Интеграторов MCP
+
+**Что изучить:**
+1. [Context7 Platform](03-mcp/context7-platform.md)
+2. [ctx7 CLI](03-mcp/ctx7-cli.md)
+3. [Agent Loop](04-subagents/agent-loop.md)
+
+**Промпт для нейросети:**
+```
+Прочитай последовательно:
+1. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/03-mcp/context7-platform.md
+2. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/03-mcp/ctx7-cli.md
+
+Настрой Context7 для моего проекта на React + TypeScript.
+```
+
+### Путь 3: Subagent Development ⏱️ 4-6 часов
+**Для:** Разработчиков субагентов
+
+**Что изучить:**
+1. [Concept: Workflow](02-skills/concept-workflow.md)
+2. [Subagents and Delegation](04-subagents/subagents-and-delegation.md)
+3. [CodeX Catalog](09-codex/01-subagents-catalog.md)
+
+**Промпт для нейросети:**
+```
+Прочитай последовательно:
+1. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/02-skills/concept-workflow.md
+2. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/04-subagents/subagents-and-delegation.md
+3. https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/09-codex/01-subagents-catalog.md
+
+Создай workflow для code review с 3 субагентами.
+```
+
+### Путь 4: Full Stack ⏱️ 8-12 часов
+**Для:** Тимлидов и архитекторов
+
+**Что изучить:** Все разделы последовательно
+
+**Промпт для нейросети:**
+```
+Прочитай все разделы:
+https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook
+
+Создай комплексное решение для моей команды:
+- Настройка Claude Code
+- Настройка MCP
+- Workflow с субагентами
+- CodeX интеграция
+```
+
+---
+
+## Разделы подробно
+
+### 01-commands — CLI и команды
+**Когда использовать:** Нужна быстрая справка по командам
+
+**Что внутри:**
+- Slash-команды Claude Code (/usage, /chrome, /mcp, /stats, /clear, /compact, /context, /config, /plan, /copy)
+- DX Plugin команды (/dx:clone, /dx:handoff, /dx:gha)
+- Skills для Claude Code (clone, gha, handoff, reddit-fetch, review-claudemd)
+- chub CLI (search, get, annotate, feedback)
+
+**Пример промпта:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/01-commands/slash-commands.md
+
+Как использовать /plan для разработки новой фичи?
+```
+
+### 02-skills — Навыки и workflow
+**Когда использовать:** Создаёте новый skill или workflow
+
+**Что внутри:**
+- Concept: Skill — что такое skill и как его создать
+- Concept: Workflow — 7 core workflows
+- Subagent-driven Development — делегирование субагентам
+- TDD — RED-GREEN-REFACTOR цикл
+- Brainstorming — Socratic design refinement
+- Writing Plans — планирование реализации
+- Systematic Debugging — 4-фазный debugging
+- Git Worktrees — параллельные ветки
+
+**Пример промпта:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/02-skills/concept-skill.md
+
+Создай skill для [ВАША ЗАДАЧА].
+```
+
+### 03-mcp — Model Context Protocol
+**Когда использовать:** Интеграция с MCP серверами
+
+**Что внутри:**
+- Context7 Platform — актуальная документация для LLM
+- ctx7 CLI — команды library, docs, skills, setup
+- MCP Server — интеграция с редакторами
+- MCP Config — настройка для Cursor, Claude, Windsurf, VS Code
+- Tools: resolve-library-id, query-docs
+
+**Пример промпта:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/03-mcp/context7-platform.md
+
+Настрой Context7 MCP для Cursor.
+```
+
+### 04-subagents — Субагенты
+**Когда использовать:** Делегирование задач агентам
+
+**Что внутри:**
+- Agent Loop — минимальный цикл агента
+- Tools and Function Calling — вызов функций
+- Todo and Planning — система планирования
+- Subagents and Delegation — делегирование
+- Skills System — on-demand knowledge
+- Context Compression — сжатие контекста
+- Task System — фоновые задачи
+- Agent Teams — команды агентов
+- Agent Harness — ready-to-run агент
+- Filesystem Backend — работа с файлами
+- Context Management — авто-суммаризация
+
+**Пример промпта:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/04-subagents/agent-loop.md
+
+Создай агента на Python с инструментами read_file, write_file, execute.
+```
+
+### 09-codex — CodeX субагенты
+**Когда использовать:** Работа с Codex
+
+**Что внутри:**
+- 00-overview — обзор CodeX экосистемы
+- 01-subagents-catalog — **136+ субагентов** по 10 категориям
+- 02-subagent-spec-template — шаблон TOML спецификации
+- 03-workflows — паттерны workflow
+- 04-integration-notes — заметки по интеграции
+- 05-troubleshooting — типичные проблемы
+
+**Пример промпта:**
+```
+Прочитай https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook/blob/main/09-codex/01-subagents-catalog.md
+
+Найди субагента для backend разработки на Python.
+```
+
+---
 
 ## Источники
 
@@ -61,6 +286,27 @@ cd prompt-ops-playbook
 - [context-hub](https://github.com/andrewyng/context-hub)
 - [supersearch](https://github.com/anish-palakurthi/supersearch)
 
+---
+
+## Статистика
+
+- **19 файлов** документации
+- **136+ CodeX субагентов** в каталоге
+- **9 репозиториев** разобрано
+- **4 learning paths** для разных уровней
+
+---
+
 ## Лицензия
 
 MIT License — см. [LICENSE](LICENSE)
+
+---
+
+## Начните прямо сейчас
+
+👉 **[INDEX.md](INDEX.md)** — полная навигация
+
+👉 **[USAGE.md](USAGE.md)** — подробное руководство с примерами промптов
+
+👉 **[09-codex/01-subagents-catalog.md](09-codex/01-subagents-catalog.md)** — 136+ готовых агентов
