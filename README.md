@@ -27,7 +27,8 @@
 Этот репозиторий — **энциклопедия** для работы с AI-агентами:
 - **144+ Agency Agents** — специализированные агенты с личностями (Claude, Cursor, Aider)
 - **136+ CodeX субагентов** — готовые специалисты для CodeX
-- **Claude Code команды** — slash-команды и skills
+- **50+ Claude Code команд** — полная шпаргалка со всеми командами
+- **Claude Code skills** — готовые скиллы (Color Expert: 113 файлов, 286K слов)
 - **MCP интеграции** — подключение внешних инструментов
 - **Workflow шаблоны** — проверенные паттерны работы
 - **Subagent паттерны** — делегирование и оркестрация
@@ -369,9 +370,11 @@ https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook
 
 ## Статистика
 
-- **20 файлов** документации
+- **22 файла** документации
 - **144+ Agency Agents** с личностями
 - **136+ CodeX субагентов** в каталоге
+- **50+ Claude Code команд** в шпаргалке
+- **Color Expert skill** — 113 файлов, 286K слов о науке о цвете
 - **10 репозиториев** разобрано
 - **5 learning paths** для разных уровней
 
@@ -385,8 +388,12 @@ MIT License — см. [LICENSE](LICENSE)
 
 ## Начните прямо сейчас
 
+👉 **[MASTER_PROMPT.md](MASTER_PROMPT.md)** — 🚀 СТАРТУЙТЕ ЗДЕСЬ! Мастер-промпт
+
 👉 **[INDEX.md](INDEX.md)** — полная навигация
 
-👉 **[USAGE.md](USAGE.md)** — подробное руководство с примерами промптов
+👉 **[01-commands/claude-code-commands-cheatsheet.md](01-commands/claude-code-commands-cheatsheet.md)** — 50+ команд Claude Code
+
+👉 **[02-skills/skill-color-expert.md](02-skills/skill-color-expert.md)** — Скилл по науке о цвете
 
 👉 **[09-codex/01-subagents-catalog.md](09-codex/01-subagents-catalog.md)** — 136+ готовых агентов
