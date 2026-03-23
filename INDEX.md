@@ -25,6 +25,7 @@
 ## Быстрая навигация
 
 ### 01-commands — CLI и команды
+- [Claude Code Commands Cheatsheet](01-commands/claude-code-commands-cheatsheet.md) — **50+ команд**: /init, /compact, /diff, /review, CLI flags, hotkeys
 - [Slash-команды Claude Code](01-commands/slash-commands.md) — /usage, /chrome, /mcp, /stats, /clear, /compact, /context, /config, /plan, /copy
 - [chub CLI](01-commands/chub-cli.md) — Context Hub команды: search, get, annotate, feedback
 - [Skills](01-commands/skills.md) — 6 skills для Claude Code: clone, gha, handoff, reddit-fetch, review-claudemd, half-clone
@@ -38,6 +39,7 @@
 - [Writing Plans](02-skills/skill-writing-plans.md) — Планирование реализации
 - [Systematic Debugging](02-skills/skill-systematic-debugging.md) — 4-фазный debugging
 - [Git Worktrees](02-skills/skill-git-worktrees.md) — Параллельные ветки
+- [Color Expert](02-skills/skill-color-expert.md) — **Скилл по науке о цвете**: 113 файлов, 286K слов, от Гельмгольца до OKLCH
 
 ### 03-mcp — Model Context Protocol
 - [Context7 Platform](03-mcp/context7-platform.md) — Актуальная документация для LLM
