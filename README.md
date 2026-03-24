@@ -1,9 +1,37 @@
 # Prompt Ops Playbook
 
+![Master Prompt X60 Banner](assets/master-prompt-x60-banner.svg)
+
 > Модульная база знаний для AI-агентов: команды, навыки, MCP, субагенты и промпты.
 
 [![GitHub](https://img.shields.io/badge/GitHub-Repo-blue)](https://github.com/pavelvladimirovich258614-sys/prompt-ops-playbook)
 [![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![Master Prompt](https://img.shields.io/badge/Master_Prompt-X60-6378ff)](MASTER_PROMPT_X60.md)
+
+---
+
+## 🚀 НАЧНИ ОТСЮДА — Master Prompt X60
+
+> **Новый чат? Всегда начинай с этого файла.**
+
+**👉 [MASTER_PROMPT_X60.md](MASTER_PROMPT_X60.md)** — Версия 2.0 с агентной архитектурой
+
+**Что внутри:**
+- 12 блоков инициализации (от идентичности до стартового отчёта)
+- 4 уровня агентов: Orchestrator → Domain → Skill → Micro
+- 6 когнитивных режимов: `DEEP_CODE` / `PROMPT_FORGE` / `KB_DIVE` / `ARCHITECT` / `DEBUG` / `TEACH`
+- 8 ворот качества для каждого ответа
+- Протокол переноса контекста между чатами
+- Полный стек okbot.space зашит внутрь
+
+```
+Как использовать:
+1. Открой MASTER_PROMPT_X60.md
+2. Скопируй блок кода целиком
+3. Вставь первым сообщением в новый чат
+4. Прикрепи этот репозиторий
+5. ИИ выполнит инициализацию и выдаст стартовый отчёт
+```
 
 ---
 
