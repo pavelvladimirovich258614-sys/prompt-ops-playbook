@@ -70,6 +70,12 @@
 - [Integration Notes](09-codex/04-integration-notes.md) — Интеграция с Codex
 - [Troubleshooting](09-codex/05-troubleshooting.md) — Типичные проблемы
 
+### 10-prompt-master — Генератор промптов для 30+ AI-инструментов
+
+- [SKILL.md](10-prompt-master/SKILL.md) — основной скилл: 30+ tool profiles, 12 шаблонов, 35 антипаттернов
+- [Templates](10-prompt-master/references/templates.md) — 12 шаблонов (RTF, CO-STAR, RISEN, ReAct и др.)
+- [Patterns](10-prompt-master/references/patterns.md) — 35 паттернов, убивающих токены, с до/после
+
 ## Learning Paths
 
 ### Claude Code Basics
