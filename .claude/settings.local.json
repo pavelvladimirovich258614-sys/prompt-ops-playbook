@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git add 03-mcp/mcp-configs-patterns.md)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(git add 06-glossary/glossary.md)",
+      "Bash(git add INDEX.md)",
+      "Bash(git add PLAYBOOK.md)",
+      "Bash(git add 07-registry/skills-and-mcp-registry.md)",
+      "Bash(git add 08-prompts)",
+      "Bash(git add AGENTS.md)",
+      "Bash(git add .cursor/rules/repo-aware-assistant.mdc)"
+    ]
+  }
+}
