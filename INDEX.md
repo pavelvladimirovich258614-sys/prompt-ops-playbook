@@ -1,65 +1,96 @@
-# INDEX – Карта курса
+# Prompt Ops Playbook — Index
 
-INDEX – это главная навигационная карта репозитория `prompt-ops-playbook`.
+## 🚀 СТАРТУЙ ЗДЕСЬ (ПЕРВЫМ ДЕЛОМ!)
 
-Его задача – не просто перечислить папки, а помочь быстро понять:
-– где искать нужный материал;
-– какой файл подключать в новый чат;
-– как переносить контекст между инструментами;
-– какие якоря использовать для точечной работы с ассистентом.
+> ⚠️ **ВАЖНО:** Перед началом работы активируй мастер-промпт!
 
-Если весь репозиторий – это база знаний, то INDEX – это её стартовый интерфейс.
+### 👉 [MASTER_PROMPT.md](MASTER_PROMPT.md) ← НАЖМИ И СКОПИРУЙ
 
----
+**Что делает мастер-промпт:**
+- ✅ AI сам предлагает команды (не нужно думать что спросить)
+- ✅ Подключает MCP автоматически (Context7, GitHub и др.)
+- ✅ Использует агентов из базы знаний (144+ Agency Agents)
+- ✅ Ведёт разработку как опытный Senior Developer
+- ✅ Даёт конкретные инструкции что делать дальше
 
-## Как работать с этим репозиторием
-
-Базовый порядок такой:
-
-1. Сначала открой `README.md`, чтобы понять назначение репозитория.
-2. Затем открой `PLAYBOOK.md`, чтобы понять правила работы ассистента по этой базе знаний.
-3. После этого используй данный `INDEX.md` как карту выбора нужного раздела.
-4. Не загружай в новый чат весь репозиторий сразу, если задача узкая.
-5. Подключай только нужные тематические файлы и, при необходимости, `PLAYBOOK.md`.
+**Как использовать:**
+1. Открой [MASTER_PROMPT.md](MASTER_PROMPT.md)
+2. Скопируй блок "MASTER PROMPT ACTIVATION"
+3. Вставь в начало диалога с AI
+4. Опиши свою задачу
+5. AI сам всё сделает!
 
 ---
 
-## Основные разделы
+## Быстрая навигация
 
-### 00-README
-**Файл:** `00-README/README.md`
-**Назначение:** вводные принципы организации базы знаний
-**Когда подключать:** когда нужно объяснить, почему курс разложен по модулям и как им пользоваться
+### 01-commands — CLI и команды
+- [Claude Code Commands Cheatsheet](01-commands/claude-code-commands-cheatsheet.md) — **50+ команд**: /init, /compact, /diff, /review, CLI flags, hotkeys
+- [Slash-команды Claude Code](01-commands/slash-commands.md) — /usage, /chrome, /mcp, /stats, /clear, /compact, /context, /config, /plan, /copy
+- [chub CLI](01-commands/chub-cli.md) — Context Hub команды: search, get, annotate, feedback
+- [Skills](01-commands/skills.md) — 6 skills для Claude Code: clone, gha, handoff, reddit-fetch, review-claudemd, half-clone
 
-### 01-commands
-**Файл:** `01-commands/commands-catalog.md`
-**Назначение:** каталог команд, режимов, slash-команд, permissions и базовых CLI-паттернов
-**Когда подключать:** когда вопрос связан с командами, контекстом, правами, диагностикой запуска, управлением сессией
+### 02-skills — Навыки и workflow
+- [Skill](02-skills/concept-skill.md) — Что такое skill
+- [Workflow](02-skills/concept-workflow.md) — Mandatory agentic workflows
+- [Subagent-driven Development](02-skills/concept-subagent-driven-development.md) — Делегирование субагентам
+- [TDD](02-skills/concept-tdd.md) — RED-GREEN-REFACTOR
+- [Brainstorming](02-skills/skill-brainstorming.md) — Socratic design refinement
+- [Writing Plans](02-skills/skill-writing-plans.md) — Планирование реализации
+- [Systematic Debugging](02-skills/skill-systematic-debugging.md) — 4-фазный debugging
+- [Git Worktrees](02-skills/skill-git-worktrees.md) — Параллельные ветки
+- [Color Expert](02-skills/skill-color-expert.md) — **Скилл по науке о цвете**: 113 файлов, 286K слов, от Гельмгольца до OKLCH
 
-### 02-skills
-**Файл:** `02-skills/skills-setup.md`
-**Назначение:** подключение, проверка, тестирование и документирование скиллов
-**Когда подключать:** когда нужно понять, нужен ли скилл, как его проверить и как встроить в рабочую систему
+### 03-mcp — Model Context Protocol
+- [Context7 Platform](03-mcp/context7-platform.md) — Актуальная документация для LLM
+- [ctx7 CLI](03-mcp/ctx7-cli.md) — Команды: library, docs, skills, setup
+- [MCP Server](03-mcp/mcp-server.md) — Интеграция с редакторами
+- [MCP Config](03-mcp/mcp-config.md) — Конфигурация для Claude/Cursor/Windsurf
+- [Resolve Library ID](03-mcp/tool-resolve-library-id.md) — Tool для поиска Library ID
+- [Query Docs](03-mcp/tool-query-docs.md) — Tool для получения документации
 
-### 03-mcp
-**Файл:** `03-mcp/mcp-configs-patterns.md`
-**Назначение:** MCP, минимальные конфигурации, паттерны расширения и диагностика
-**Когда подключать:** когда задача связана с MCP, его настройкой, упрощением, стабилизацией или расширением
+### 04-subagents — Субагенты
+- [Agent Loop](04-subagents/agent-loop.md) — Минимальный цикл агента
+- [Tools and Function Calling](04-subagents/tools-and-function-calling.md) — Вызов функций
+- [Todo and Planning](04-subagents/todo-and-planning.md) — Система планирования
+- [Subagents and Delegation](04-subagents/subagents-and-delegation.md) — Делегирование
+- [Skills System](04-subagents/skills-system.md) — On-demand knowledge
+- [Context Compression](04-subagents/context-compression.md) — Сжатие контекста
+- [Task System](04-subagents/task-system.md) — Фоновые задачи
+- [Agent Teams](04-subagents/agent-teams.md) — Команды агентов
+- [Agent Harness](04-subagents/agent-harness.md) — Ready-to-run агент
+- [Filesystem Backend](04-subagents/filesystem-backend.md) — Работа с файлами
+- [Context Management](04-subagents/context-management.md) — Авто-суммаризация
 
-### 04-subagents
-**Файл:** `04-subagents/subagents-roles-bus.md`
-**Назначение:** архитектура субагентов, роли, handoff, оркестрация, шина общения
-**Когда подключать:** когда задача становится слишком большой для одного потока и её нужно дробить
+### 09-codex — CodeX субагенты
+- [Overview](09-codex/00-overview.md) — Обзор CodeX экосистемы
+- [Subagents Catalog](09-codex/01-subagents-catalog.md) — 136+ субагентов по категориям
+- [Subagent Spec Template](09-codex/02-subagent-spec-template.md) — Шаблон TOML спецификации
+- [Workflows](09-codex/03-workflows.md) — Паттерны workflow
+- [Integration Notes](09-codex/04-integration-notes.md) — Интеграция с Codex
+- [Troubleshooting](09-codex/05-troubleshooting.md) — Типичные проблемы
 
-### 05-troubleshooting
-**Файл:** `05-troubleshooting/faq-diagnostics.md`
-**Назначение:** системная диагностика проблем, FAQ, локализация ошибок
-**Когда подключать:** когда что-то не работает, работает нестабильно или непонятно, где причина
+## Learning Paths
 
-### 06-glossary
-**Файл:** `06-glossary/glossary.md`
-**Назначение:** единый словарь терминов
-**Когда подключать:** когда нужно снять путаницу в понятиях или синхронизировать язык между агентами и чатами
+### Claude Code Basics
+1. [Slash-команды](01-commands/slash-commands.md)
+2. [Skills](01-commands/skills.md)
+3. [Troubleshooting](05-troubleshooting/)
+
+### MCP Integration
+1. [Context7 Platform](03-mcp/context7-platform.md)
+2. [MCP Server](03-mcp/mcp-server.md)
+3. [Subagents](04-subagents/)
+
+### Subagent Development
+1. [Skills](02-skills/)
+2. [Subagents](04-subagents/)
+3. [CodeX Catalog](09-codex/01-subagents-catalog.md)
+
+### 07-registry — Реестр инструментов
+- [Agency Agents](07-registry/agency-agents.md) — 144+ специализированных AI-агента от msitarzewski
+
+## Реестр инструментов
 
 ### 10-prompt-master
 **Файл:** `10-prompt-master/SKILL.md`
@@ -67,152 +98,23 @@ INDEX – это главная навигационная карта репоз
 **Когда подключать:** когда нужно составить эффективный промпт для Claude, Cursor, Midjourney, Sora и других инструментов
 
 ---
+| Инструмент | Назначение | Раздел |
+|------------|------------|--------|
+| Claude Code | AI ассистент для кодирования | 01-commands |
+| Context7 | Актуальная документация | 03-mcp |
+| chub | CLI для документации | 01-commands |
+| Deep Agents | Agent harness | 04-subagents |
+| Page Agent | In-page GUI agent | 04-subagents |
+| Superpowers | Skills framework | 02-skills |
+| Supersearch | BM25 поиск | 06-glossary |
+| Agency Agents | 144+ AI агентов с личностями | 07-registry |
 
-## Карта быстрых якорей
 
-Ниже приведены ключевые идентификаторы, по которым можно быстро ссылаться на материал.
+## Теги
 
-### Команды
-– `CMD-START-001` – запуск Claude Code из директории проекта
-– `CMD-HELP-001` – встроенная справка
-– `CMD-CLEAR-001` – полный сброс диалога
-– `CMD-COMPACT-001` – сжатие диалога с сохранением summary
-– `CMD-RESUME-001` – возврат к прошлым сессиям
-– `CMD-CLI-RESUME-001` – возврат через CLI
-– `CMD-CONTEXT-001` – просмотр загрузки контекста
-– `CMD-DOCTOR-001` – встроенная диагностика
-– `CMD-PERMISSIONS-001` – просмотр правил доступа
-– `CMD-PERM-RULES-001` – модель allow / ask / deny
-– `CMD-PERM-PRIORITY-001` – приоритет правил
-– `CMD-PERM-BASH-001` – Bash-паттерны
-– `CMD-PERM-ADDITIONAL-DIRS-001` – доступ к дополнительным директориям
-– `CMD-EXIT-001` – завершение и перезапуск сессии
-
-### Скиллы
-– `SKILL-CONNECT-001` – базовое подключение скилла
-– `SKILL-CHECK-001` – проверка реальной работы
-– `SKILL-ERROR-001` – типовые ошибки
-– `SKILL-SELECT-001` – нужен ли скилл вообще
-– `SKILL-TEST-001` – минимальный тест-кейс
-– `SKILL-DOC-001` – документирование скилла
-
-### MCP
-– `MCP-CONFIG-001` – минимальная рабочая конфигурация
-– `MCP-SETUP-001` – пошаговое внедрение
-– `MCP-DEBUG-001` – диагностика через упрощение
-– `MCP-PATTERN-001` – минимум сначала, расширение потом
-– `MCP-DOC-001` – документирование MCP
-
-### Субагенты
-– `AGENT-ARCH-001` – базовая архитектура
-– `AGENT-ROLE-001` – распределение ролей
-– `AGENT-HANDOFF-001` – передача задач
-– `AGENT-BUS-001` – шина общения
-– `AGENT-ORCH-001` – оркестратор
-– `AGENT-DOC-001` – документирование схемы
-
-### Диагностика
-– `DIAG-CONTEXT-001` – потеря контекста
-– `DIAG-PERMISSIONS-001` – проблемы с permissions
-– `DIAG-CONFIG-001` – конфиг изменён, но поведение не меняется
-– `DIAG-COMMAND-SCOPE-001` – команда выполнена не в том проекте
-– `DIAG-MCP-001` – нестабильный MCP
-– `DIAG-SKILL-001` – скилл подключён, но не работает
-– `DIAG-SUBAGENTS-001` – хаос в мультиагентной схеме
-
-### Глоссарий
-– `GLOSS-001` – контекст
-– `GLOSS-002` – контекстное окно
-– `GLOSS-003` – скилл
-– `GLOSS-004` – MCP
-– `GLOSS-005` – конфиг
-– `GLOSS-006` – permissions
-– `GLOSS-007` – allow
-– `GLOSS-008` – ask
-– `GLOSS-009` – deny
-– `GLOSS-010` – handoff
-– `GLOSS-011` – оркестратор
-– `GLOSS-012` – шина общения
-– `GLOSS-013` – минимальный воспроизводимый сценарий
-– `GLOSS-014` – источник истины
-
----
-
-## Как переносить контекст в новый чат
-
-Если ты начинаешь новый чат и хочешь, чтобы ассистент быстро включился в работу, используй такой принцип:
-
-### Для узкой задачи
-Подключай:
-– `PLAYBOOK.md`
-– один тематический файл
-– при необходимости `INDEX.md`
-
-Пример:
-если вопрос только про permissions, не нужно грузить MCP и субагентов.
-
-### Для средней задачи
-Подключай:
-– `PLAYBOOK.md`
-– `INDEX.md`
-– один основной раздел
-– один смежный раздел
-
-Пример:
-если задача про нестабильный MCP, подключай `03-mcp/...` и `05-troubleshooting/...`.
-
-### Для большой задачи
-Подключай:
-– `README.md`
-– `PLAYBOOK.md`
-– `INDEX.md`
-– все релевантные разделы по теме
-
-Но даже в этом случае лучше не грузить весь репозиторий без необходимости.
-
----
-
-## Рекомендуемые стартовые наборы файлов
-
-### Если вопрос про команды
-Подключить:
-– `PLAYBOOK.md`
-– `01-commands/commands-catalog.md`
-
-### Если вопрос про скиллы
-Подключить:
-– `PLAYBOOK.md`
-– `02-skills/skills-setup.md`
-– при необходимости `05-troubleshooting/faq-diagnostics.md`
-
-### Если вопрос про MCP
-Подключить:
-– `PLAYBOOK.md`
-– `03-mcp/mcp-configs-patterns.md`
-– `05-troubleshooting/faq-diagnostics.md`
-
-### Если вопрос про субагентов
-Подключить:
-– `PLAYBOOK.md`
-– `04-subagents/subagents-roles-bus.md`
-– `06-glossary/glossary.md`
-
-### Если что-то сломалось
-Подключить:
-– `PLAYBOOK.md`
-– `05-troubleshooting/faq-diagnostics.md`
-– один тематический раздел по проблеме
-
----
-
-## Принцип использования INDEX
-
-INDEX не должен превращаться в длинную теорию.
-Его задача – ускорять доступ, а не заменять сами разделы.
-
-Хороший INDEX:
-– даёт карту;
-– даёт якоря;
-– даёт правила подключения файлов;
-– уменьшает лишний контекст;
-– помогает ассистенту быстро понять, что загружено, а чего не хватает.
+- #cli — CLI команды
+- #skills — Навыки и workflow
+- #mcp — Model Context Protocol
+- #subagents — Субагенты
+- #codex — CodeX
+- #troubleshooting — Решение проблем
